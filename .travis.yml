@@ -11,14 +11,19 @@ install:
   - MYGIT=${PWD}
   - echo $MYGIT
   - WORKPATH="${MYGIT}/travis"
+  - echo $WORKPATH
   - cd ..
+  - echo $PWD
   - git clone git://github.com/amperka/ino.git
   - cd ino
+  - echo $PWD
   - sudo make install
   - sudo easy_install `cat requirements.txt`
   - cd ..
   - cd $WORKPATH
   - echo $PWD
+  - ls
+  - ls -la
   
 
 script: 
