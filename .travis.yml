@@ -17,6 +17,7 @@ install:
   - sudo easy_install `cat requirements.txt`
   - cd ..
   - cd $MYPATH
+  - echo $PWD
   
 
 script: 
