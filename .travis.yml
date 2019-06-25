@@ -3,7 +3,6 @@ compiler: gcc
 
 install:
   - sudo apt-get install arduino
-  - my_github=${PWD}
   - BASE=${PWD##*/}
   - DIR=${PWD%$BASE}
   - cd ..
@@ -13,6 +12,7 @@ install:
   - sudo easy_install `cat requirements.txt`
   - cd ..
   - cd $DIR
+  - echo PWD
   
 
 script: 
