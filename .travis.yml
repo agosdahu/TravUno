@@ -8,16 +8,15 @@ compiler: gcc
 
 install:
   - sudo apt-get install arduino
-  - BASE=${PWD##*/}
-  - DIR=${PWD%$BASE}
+  - MYGIT=${PWD}
+  - WORKPATH="${PWD}/travis"
   - cd ..
   - git clone git://github.com/amperka/ino.git
   - cd ino
   - sudo make install
   - sudo easy_install `cat requirements.txt`
   - cd ..
-  - cd $DIR
-  - echo PWD
+  - cd $MYPATH
   
 
 script: 
