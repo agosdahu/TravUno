@@ -18,7 +18,8 @@ install:
   - cd ino
   - echo $PWD
   - sudo make install
-  - sudo easy_install `cat requirements.txt`
+  - ino --help
+  #- sudo easy_install `cat requirements.txt`
   - cd ..
   - cd $WORKPATH
   - echo $PWD
