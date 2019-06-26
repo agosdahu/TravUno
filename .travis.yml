@@ -9,8 +9,6 @@ compiler: gcc
 install:
   - sudo apt-get install arduino
   - MYGIT=${PWD}
-  - echo $MYGIT
-  - echo $WORKPATH
   - cd ..
   - git clone git://github.com/amperka/ino.git
   - cd ino
