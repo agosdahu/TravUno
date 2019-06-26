@@ -1,6 +1,6 @@
 notifications:
   email:
-    on_success: always
+    on_success: change
     on_failure: never
 
 language: cpp
