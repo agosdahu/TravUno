@@ -17,7 +17,7 @@ install:
   - sudo make install
   - sudo easy_install `cat requirements.txt`
   - cd ..
-  - cd MYGIT 
+  - cd $MYGIT 
 
 script: 
   - ino build
